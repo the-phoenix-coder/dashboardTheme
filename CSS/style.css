@@ -1,0 +1,56 @@
+:root {
+    --clr-lighter: #E9EBEE;
+    --clr-light: #AFAFB4;
+    --clr-dark1: hsl(252, 3%, 42%);
+    --clr-dark2: #515055;
+    --clr-txt: #555;
+    --clr-head: #333;
+    --fs-body-sm: .9rem;
+    --fs-body-md: 1.5rem;
+    --fs-body-lg: 2rem;
+    --fs-heading: 4rem;
+    --fs-head: 6rem;
+    --fm-body: 'Ubuntu', sans-serif;
+    --fm-head: 'Playfair Display', serif;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+figure {
+    overflow: hidden;
+}
+picture,
+img
+{
+    width: 100%;
+    height: 100%;
+}
+svg {
+    width: 25px;
+    height: 25px;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* Utilities Classes */
+.container {
+    margin-inline: clamp(2rem, 4.5vw, 5rem);
+}
+.even-column {
+    display: flex;
+    align-items: center;
+}
