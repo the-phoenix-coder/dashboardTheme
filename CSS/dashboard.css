@@ -64,6 +64,9 @@ header {
 header .container .even-column {
     justify-content: space-between;
 }
+header .logo {
+    gap: 4.7rem!important;
+}
 header .even-column .even-column {
     gap: 1rem;
 }
@@ -97,11 +100,30 @@ header .icons figure {
 .content {
     grid-area: content;
 }
+.content .head-txt {
+    font-weight: normal;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    padding-bottom: .5rem;
+}
+.content .head-back {
+    background-color: #CCC;
+    width: 130px;
+    height: 2px;
+    margin-left: .5rem;
+}
+.content .head-front {
+    background-color: var(--accent-clr);
+    width: 30%;
+    height: 100%;
+    display: block;
+}
 .content .component {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items: stretch;
     gap: 1rem;
+    margin-block: 1rem;
 }
 .content .component .box {
     display: flex;
@@ -142,9 +164,7 @@ header .icons figure {
     position: absolute;
     top: 80%
 }
-.content .component .bottom {
-    margin-top: 50px;
-}
+.content .component .bottom {margin-top: 50px;}
 .content .component .bottom .even-column {
     padding: 30px;
     border-top: 1px solid #CCC;
@@ -152,9 +172,7 @@ header .icons figure {
     justify-content: space-between;
     align-items: center;
 }
-.content .component .bottom .title {
-    text-align: center;
-}
+.content .component .bottom .title {text-align: center;}
 .content .component button {
     width: fit-content;
     float: right;
@@ -177,9 +195,7 @@ header .icons figure {
     color: black;
     font-weight: bold;
 }
-.box:last-child .chart > *{
-    margin-block: .5rem;
-}
+.box:last-child .chart > * {margin-block: .5rem;}
 .box:last-child .prog-parent {
     background-color: #CCC;
     width: 100%;
@@ -205,14 +221,12 @@ header .icons figure {
     background-color: var(--clr);
     width: 75%;
 }
-.box:last-child h6 {
-    font-size: 1.2rem;
-}
+.box:last-child h6 {font-size: 1.2rem;}
 .box:last-child .prog-parent span::after {
     content: attr(data-prog);
     position: absolute;
     top: -35px;
-    right: 0;
+    right: -10px;
     font-size: .8rem;
     font-weight: bold;
     background-color: var(--accent-clr);
@@ -232,7 +246,7 @@ header .icons figure {
     background-color: var(--accent-clr);
     position: absolute;
     top: -27px;
-    right: 7px;
+    right: 0px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
