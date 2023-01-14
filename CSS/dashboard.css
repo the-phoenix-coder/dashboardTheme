@@ -1,7 +1,7 @@
 /* Start Aside */
 aside {
     grid-area: aside;
-    background-color: white;
+    background-color: var(--white-1);
     padding: 1rem;
     height: 100%;
 }
@@ -43,14 +43,14 @@ aside nav ul li {
 }
 aside nav ul li:hover {
     background-color: #999;
-    color: white;
+    color: var(--white-1);
 }
 aside nav ul li.active {
     background-color: #555;
-    color: white;
+    color: var(--white-1);
 }
 aside nav ul li:is(:hover, .active) svg {
-    fill: white;
+    fill: var(--white-1);
 }
 aside nav ul li::after {
     content: attr(data-type);
@@ -59,7 +59,7 @@ aside nav ul li::after {
 header {
     padding-block: .5rem;
     grid-area: header;
-    background-color: white;
+    background-color: var(--white-1);
 }
 header .container .even-column {
     justify-content: space-between;
@@ -73,7 +73,7 @@ header .even-column .even-column {
 header input {
     background-image: url(../imgs/searchengin.svg);
     background-repeat: no-repeat;
-    border: 1px solid #DDD;
+    border: 1px solid var(--white-3);
     padding: .3rem;
     border-radius: .3rem;
     -webkit-border-radius: .3rem;
@@ -107,13 +107,13 @@ header .icons figure {
     padding-bottom: .5rem;
 }
 .content .head-back {
-    background-color: #CCC;
+    background-color: var(--white-5);
     width: 130px;
     height: 2px;
     margin-left: .5rem;
 }
 .content .head-front {
-    background-color: var(--accent-clr);
+    background-color: var(--accent-clr1);
     width: 30%;
     height: 100%;
     display: block;
@@ -128,7 +128,7 @@ header .icons figure {
 .content .component .box {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--white-1);
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -140,7 +140,7 @@ header .icons figure {
     color: #999;
 }
 .content .component :is(.box:nth-child(2), .box:last-child) .top {
-    background-color: white;
+    background-color: var(--white-1);
 }
 .content .component .box:nth-child(2) > * {
     margin-top: 5px;
@@ -148,14 +148,14 @@ header .icons figure {
 .content .component .top {
     position: relative;
     padding-bottom: 30px;
-    background-color: #ccc;
+    background-color: var(--white-3);
     padding-left: 30px;
     padding-top: 10px
 }
-.content .component figure {
+.content .component .box:first-child figure {
     width: 40px;
     height: 40px;
-    border: 3px solid white;
+    border: 3px solid var(--white-1);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -167,8 +167,8 @@ header .icons figure {
 .content .component .bottom {margin-top: 50px;}
 .content .component .bottom .even-column {
     padding: 30px;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
+    border-top: 1px solid var(--white-4);
+    border-bottom: 1px solid var(--white-4);
     justify-content: space-between;
     align-items: center;
 }
@@ -181,13 +181,13 @@ header .icons figure {
     margin-top: 10px;
     border: 0;
     padding: .4rem 1rem;
-    color: white;
+    color: var(--white-1);
     font-weight: bold;
 }
 .box input, textarea {
     border: 0;
     outline: none;
-    background-color: #f0f0f0;
+    background-color: var(--white-3);
     padding: 1rem;
     resize: none;
 }
@@ -197,7 +197,7 @@ header .icons figure {
 }
 .box:last-child .chart > * {margin-block: .5rem;}
 .box:last-child .prog-parent {
-    background-color: #CCC;
+    background-color: var(--white-3);
     width: 100%;
     height: 3px;
 }
@@ -207,7 +207,7 @@ header .icons figure {
     position: relative;
 }
 .box:last-child .prog-parent .prog1 {
-    --clr: var(--accent-clr);
+    --clr: var(--accent-clr1);
     background-color: var(--clr);
     width: 80%;
 }
@@ -229,21 +229,21 @@ header .icons figure {
     right: -10px;
     font-size: .8rem;
     font-weight: bold;
-    background-color: var(--accent-clr);
-    color: white;
+    background-color: var(--accent-clr1);
+    color: var(--white-1);
     padding: .3rem;
 }
-.box:last-child .prog-parent .prog1::after{background-color: var(--accent-clr)}
+.box:last-child .prog-parent .prog1::after{background-color: var(--accent-clr1)}
 .box:last-child .prog-parent .prog2::after{background-color: orange}
 .box:last-child .prog-parent .prog3::after{background-color: #3db43d}
-.box:last-child .prog-parent .prog1::before{background-color: var(--accent-clr)}
+.box:last-child .prog-parent .prog1::before{background-color: var(--accent-clr1)}
 .box:last-child .prog-parent .prog2::before{background-color: orange}
 .box:last-child .prog-parent .prog3::before{background-color: #3db43d}
 .box:last-child .prog-parent span::before {
     content: '';
     width: 20px;
     height: 20px;
-    background-color: var(--accent-clr);
+    background-color: var(--accent-clr1);
     position: absolute;
     top: -27px;
     right: 0px;
@@ -252,4 +252,48 @@ header .icons figure {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
+}
+.component .box .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.component .box .body .card {
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 2px 1px #999;
+}
+.component .box .body .card:first-child svg {fill: orange}
+.component .box .body .card:nth-child(2) svg {fill: var(--accent-clr1)}
+.component .box .body .card:nth-child(3) svg {fill: #3db43d}
+.component .box .body .card:last-child svg {fill: rgb(209, 56, 56)}
+.component .box .head {
+    margin-bottom: 2rem;
+}
+.component .box .news-body {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1rem;
+}
+.component .box .news-body .new {
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem
+}
+.component .box .news-body .new figure {
+    width: 70px;
+}
+.component .box .news-body .new p {
+    font-size: .8rem;
+}
+.component .box .news-body .new .date {
+    font-size: .6rem;
+    background-color: var(--white-4);
+    padding: .3rem;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
 }
