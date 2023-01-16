@@ -86,7 +86,8 @@ button:hover {
     align-items: center;
 }
 .component {
-    padding: .5rem;
+    padding-inline: .5rem;
+    padding-block: .2rem;
 }
 .component > * > *{
     border-radius: .4rem;
