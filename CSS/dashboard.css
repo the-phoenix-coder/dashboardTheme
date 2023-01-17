@@ -121,7 +121,7 @@ header .icons figure {
 }
 .content .component {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: stretch;
     gap: .3rem;
 }
@@ -139,7 +139,7 @@ header .icons figure {
 .content .component .box p {
     color: #999;
 }
-.content .component :is(.box:nth-child(2), .box:last-child) .top {
+.content .component :is(.box:nth-child(2), .box.progress-box) .top {
     background-color: var(--white-1);
 }
 .content .component .box:nth-child(2) > * {
@@ -195,34 +195,34 @@ header .icons figure {
     color: black;
     font-weight: bold;
 }
-.box:last-child .chart > * {margin-block: .5rem;}
-.box:last-child .prog-parent {
+.box.progress-box .chart > * {margin-block: .5rem;}
+.box.progress-box .prog-parent {
     background-color: var(--white-3);
     width: 100%;
     height: 3px;
 }
-.box:last-child .prog-parent span {
+.box.progress-box .prog-parent span {
     height: 3px;
     display: block;
     position: relative;
 }
-.box:last-child .prog-parent .prog1 {
+.box.progress-box .prog-parent .prog1 {
     --clr: var(--accent-clr1);
     background-color: var(--clr);
     width: 80%;
 }
-.box:last-child .prog-parent .prog2 {
+.box.progress-box .prog-parent .prog2 {
     --clr: orange;
     background-color: var(--clr);
     width: 55%;
 }
-.box:last-child .prog-parent .prog3 {
+.box.progress-box .prog-parent .prog3 {
     --clr: #3db43d;
     background-color: var(--clr);
     width: 75%;
 }
-.box:last-child h6 {font-size: 1.2rem;}
-.box:last-child .prog-parent span::after {
+.box.progress-box h6 {font-size: 1.2rem;}
+.box.progress-box .prog-parent span::after {
     content: attr(data-prog);
     position: absolute;
     top: -35px;
@@ -233,13 +233,13 @@ header .icons figure {
     color: var(--white-1);
     padding: .3rem;
 }
-.box:last-child .prog-parent .prog1::after{background-color: var(--accent-clr1)}
-.box:last-child .prog-parent .prog2::after{background-color: orange}
-.box:last-child .prog-parent .prog3::after{background-color: #3db43d}
-.box:last-child .prog-parent .prog1::before{background-color: var(--accent-clr1)}
-.box:last-child .prog-parent .prog2::before{background-color: orange}
-.box:last-child .prog-parent .prog3::before{background-color: #3db43d}
-.box:last-child .prog-parent span::before {
+.box.progress-box .prog-parent .prog1::after{background-color: var(--accent-clr1)}
+.box.progress-box .prog-parent .prog2::after{background-color: orange}
+.box.progress-box .prog-parent .prog3::after{background-color: #3db43d}
+.box.progress-box .prog-parent .prog1::before{background-color: var(--accent-clr1)}
+.box.progress-box .prog-parent .prog2::before{background-color: orange}
+.box.progress-box .prog-parent .prog3::before{background-color: #3db43d}
+.box.progress-box .prog-parent span::before {
     content: '';
     width: 20px;
     height: 20px;
@@ -253,7 +253,7 @@ header .icons figure {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
-.component .box .body {
+.component .box .ticket-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -288,8 +288,7 @@ header .icons figure {
     font-size: .8rem;
 }
 .component .box .news-body .new .date {
-    font-weight: 600;
-    font-size: .9rem;
+    font-size: .7rem;
     background-color: var(--white-4);
     padding: .3rem;
     border-radius: .4rem;
@@ -355,12 +354,83 @@ header .icons figure {
     border-bottom: 1px solid var(--white-4);
     padding-bottom: .5rem;
 }
-.component .box .files-body .file > .even-column {
+.component .box :where(.file, .new) .even-column {
     gap: 1rem
 }
 .component .box .files-body .file .date {
     background-color: var(--white-3);
     color: #555;
     padding: .3rem .6rem;
-    font-weight: 600;
+    font-size: .8rem;
+}
+.box.box.last-project-box {
+    position: relative;
+}
+.box .body.last-body {
+    margin-left: 4rem;
+    position: relative;
+}
+.box .body.last-body::before {
+    content: '';
+    height: 100%;
+    width: 4px;
+    background-color: var(--accent-clr1);
+    position: absolute;
+    left: -2rem;
+}
+.box .body.last-body h4:not(:first-child) {
+    font-weight: strong;
+    margin-top: 2rem;
+    position: relative;
+}
+.box .body.last-body h4::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--accent-clr1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: calc(-2rem - 10.7px);
+    background-color: white;
+}
+.box .body.last-body h4::after {
+    content: '';
+    background-color: var(--accent-clr1);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: calc(-2rem - 6px);
+    top: 5px;
+}
+.box .body.body.last-body h4:nth-child(4)::after {
+    animation: flash 1.4s ease-in-out infinite;
+    -webkit-animation: flash 1.4s ease-in-out infinite;
+}
+@keyframes flash {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.box .body.body.last-body h4:last-child::after {
+    opacity: 0;
+}
+.box.last-project-box figure {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    width: 180px;
+    height: 180px;
 }
