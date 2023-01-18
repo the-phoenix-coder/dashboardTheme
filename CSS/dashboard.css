@@ -434,3 +434,49 @@ header .icons figure {
     width: 180px;
     height: 180px;
 }
+.box.reminders div:not(:first-child, :nth-child(2)) {
+    margin-top: 1rem;
+}
+.box.reminders div:not(:first-child) {
+    margin-left: 4rem;
+    position: relative;
+}
+:where(.box.reminders) div:not(:first-child)::before, div:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+}
+.box.reminders div:not(:first-child)::before {
+    width: 2px;
+    height: 100%;
+    background-color: var(--accent-clr);
+}
+.box.reminders div:not(:first-child)::after {
+    width: 15px;
+    height: 15px;
+    background-color: var(--accent-clr);
+    left: -2.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+:where(.box.reminders) div:nth-child(2)::before, div:nth-child(2)::after {--accent-clr: var(--accent-clr1)}
+:where(.box.reminders) div:nth-child(3)::before, div:nth-child(3)::after {--accent-clr: #3db43d}
+:where(.box.reminders) div:nth-child(4)::before, div:nth-child(4)::after {--accent-clr: orange}
+:where(.box.reminders) div:last-child::before, div:last-child::after {--accent-clr: rgb(209, 56, 56)}
+
+.box.reminders h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box.reminders p {
+    font-size: .8rem;
+}
