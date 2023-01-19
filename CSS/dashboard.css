@@ -152,7 +152,7 @@ header .icons figure {
     padding-left: 30px;
     padding-top: 10px
 }
-.content .component .box:first-child figure {
+.content .component .box.personalBox figure {
     width: 40px;
     height: 40px;
     border: 3px solid var(--white-1);
@@ -164,8 +164,8 @@ header .icons figure {
     position: absolute;
     top: 80%
 }
-.content .component .bottom {margin-top: 50px;}
-.content .component .bottom .even-column {
+.content .component .box.personalBox .bottom {margin-top: 50px;}
+.content .component .box.personalBox .bottom .even-column {
     padding: 30px;
     border-top: 1px solid var(--white-4);
     border-bottom: 1px solid var(--white-4);
@@ -479,4 +479,67 @@ header .icons figure {
 }
 .box.reminders p {
     font-size: .8rem;
+}
+.last-post .top {background-color: white!important}
+.last-post .top h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.last-post .top-foot {
+    gap: 1rem
+}
+.last-post figure {
+    width: 40px;
+    height: 40px;
+}
+.last-post .middle {
+    padding: 30px;
+    border-top: 1px solid var(--white-4);
+    border-bottom: 1px solid var(--white-4);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.last-post .bottom .even-column {
+    justify-content: space-between;
+    padding-inline: 30px;
+    gap: 1rem;
+    color: #333;
+}
+.last-post .bottom .even-column figure {
+    width: 30px;
+}
+.box.social-media .app {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D1ECFD;
+    margin-left: 2rem;
+    padding: .8rem 2rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.box.social-media .app figure {
+    position: absolute;
+    width: 47px;
+    height: 54px;
+    background-color: var(--accent-clr1);
+    padding: .3rem;
+    left: -2rem;
+}
+.box.social-media .app:nth-child(2) figure {background-color: #1877F2;}
+.box.social-media .app:nth-child(3) figure {background-color: #FF0000;}
+.box.social-media .app:last-child figure {background-color: #0077B5;}
+.box.social-media .app:nth-child(2) button {background-color: #1877F2;}
+.box.social-media .app:nth-child(3) button {background-color: #FF0000;}
+.box.social-media .app:last-child button {background-color: #0077B5;}
+.box.social-media .app:nth-child(2) {background-color: #D0E4FD;}
+.box.social-media .app:nth-child(3) {background-color: #FFCCCC;}
+.box.social-media .app:last-child {background-color: #CCE4F0;}
+.box.social-media .app p {
+    color: var(--accent-clr1);
+    font-size: 1.2rem;
+}
+.box.social-media .app button {
+    margin: 0;
 }
