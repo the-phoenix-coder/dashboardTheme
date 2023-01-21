@@ -55,6 +55,11 @@ aside nav ul li:is(:hover, .active) svg {
 aside nav ul li::after {
     content: attr(data-type);
 }
+@media (max-width: 50em) {
+    aside nav ul li::after {
+        display: none;
+    }
+}
 /* End ASide */
 header {
     padding-block: .5rem;
