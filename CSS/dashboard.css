@@ -4,6 +4,42 @@ aside {
     background-color: var(--white-1);
     padding: 1rem;
     height: 100%;
+    box-shadow: 0 4px 4px 1px #DDD;
+}
+aside h3 {
+    margin: auto;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 4rem;
+}
+aside h3::after, aside h3::before {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    background-color: black;
+}
+aside h3::after {
+    height: 2px;
+    width: 100%;
+}
+aside h3::before {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: calc(-1rem - 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border: 5px solid white;
+    z-index: 100;
 }
 aside figure {
     width: 20px;
@@ -42,20 +78,18 @@ aside nav ul li {
     -o-transition: background .1s, color .1s;
 }
 aside nav ul li:hover {
-    background-color: #999;
-    color: var(--white-1);
+    background-color: #F9F9F9;
 }
 aside nav ul li.active {
-    background-color: #555;
-    color: var(--white-1);
-}
-aside nav ul li:is(:hover, .active) svg {
-    fill: var(--white-1);
+    background-color: #F6F6F6;
 }
 aside nav ul li::after {
     content: attr(data-type);
 }
 @media (max-width: 50em) {
+    aside h3 {
+        display: none;
+    }
     aside nav ul li::after {
         display: none;
     }
@@ -547,4 +581,56 @@ header .icons figure {
 }
 .box.social-media .app button {
     margin: 0;
+}
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Settings Page
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.box > * {
+    margin-block: .5rem;
+}
+:where(.site-control, .security) .even-column {
+    justify-content: space-between;
+}
+.general-info form label, .general-info form .even-column {
+    display: block;
+    margin-block: .6rem;
+}
+.general-info form .input {
+    display: flex;
+    align-items: center;
+    gap: .5rem
+}
+.general-info form input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.general-info form .even-column h4 {
+    color: var(--accent-clr1);
+    display: inline;
+    cursor: pointer;
+}
+.security .even-column:last-child button {
+    background-color: var(--white-4);
+    color: black;
 }
