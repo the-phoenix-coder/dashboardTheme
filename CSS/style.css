@@ -86,6 +86,9 @@ button {
 button:hover {
     background-color: var(--accent-clr2);
 }
+hr {
+    border: 1px solid var(--white-3);
+}
 /* Utilities Classes */
 .container {
     margin-inline: clamp(2rem, 4.5vw, 5rem);

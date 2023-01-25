@@ -666,11 +666,39 @@ Start Settings Page
 .box.social-info .social-box input::placeholder {
     color: #999;
 }
-input[type='checkbox'] {
+input:is([type='checkbox'], [type='radio']) {
     margin-right: 1rem;
     width: 20px;
     height: 20px;
 }
 label {
     user-select: none;
+}
+.plans {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .3rem
+}
+.plans .plan {
+    text-align: center;
+    border: 2px solid var(--white-5);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.plans .plan.active {
+    border-color: var(--accent-clr1);
+    color: var(--accent-clr1);
+}
+.plans .plan.active svg {
+    fill: var(--accent-clr1);
 }

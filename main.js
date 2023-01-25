@@ -16,3 +16,14 @@ inputs.forEach(input =>
     })
         input.addEventListener('focusout', () => inputs.forEach(input => input.parentElement.children[0].style.fill = '#999'))
 })
+
+const plans = document.querySelectorAll('.plans .plan')
+
+plans.forEach(plan =>
+{
+    plan.addEventListener('click', () =>
+    {
+        plans.forEach(plan => plan.classList.remove('active'))
+        plan.classList.add('active')
+    })
+})
