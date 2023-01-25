@@ -666,3 +666,11 @@ Start Settings Page
 .box.social-info .social-box input::placeholder {
     color: #999;
 }
+input[type='checkbox'] {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+label {
+    user-select: none;
+}
