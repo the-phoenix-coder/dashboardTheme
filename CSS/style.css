@@ -23,7 +23,7 @@
     font-family: var(--fm-body);
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 18px;
 }
 ::-webkit-scrollbar-track {
     background-color: var(--white-4);

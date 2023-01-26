@@ -186,9 +186,6 @@ header .icons figure {
 .content .component :is(.box:nth-child(2), .box.progress-box) .top {
     background-color: var(--white-1);
 }
-.content .component .box:nth-child(2) > * {
-    margin-top: 5px;
-}
 .content .component .top {
     position: relative;
     padding-bottom: 30px;
@@ -703,4 +700,90 @@ label {
 }
 .plans .plan.active svg {
     fill: var(--accent-clr1);
+}
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Courses Page
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.box.courses {
+    position: relative;
+    padding: 0 !important;
+    padding-bottom: 2rem !important;
+}
+
+.box.courses .top {
+    padding: 0;
+    margin: 0!important;
+}
+.box.courses figure.avatar {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+:where(.box.courses) .middle, .bottom {
+    padding-inline: 2rem;
+}
+.box.courses .middle > * {
+    margin-block: 1rem;
+}
+.box.courses .middle p {
+    max-width: 500px;
+}
+.box.courses .bottom .even-column {
+    justify-content: space-between;
+}
+.box.courses .bottom .even-column > * {
+    align-items: center;
+    display: flex;
+    gap: .3rem;
+    color: #999;
+}
+.box.courses .bottom svg {
+    width: 20px;
+    height: 20px;
+    fill: #999;
+}
+.box.courses .bottom {
+    position: relative;
+}
+.box.courses .bottom .floatInfo {
+    position: absolute;
+    background-color: var(--accent-clr1);
+    color: white;
+    padding: .2rem .5rem;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
