@@ -89,6 +89,9 @@ button:hover {
 hr {
     border: 1px solid var(--white-3);
 }
+input::placeholder, textarea::placeholder {
+    color: #999 !important;
+}
 /* Utilities Classes */
 .container {
     margin-inline: clamp(2rem, 4.5vw, 5rem);

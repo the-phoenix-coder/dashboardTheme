@@ -7,9 +7,9 @@
     <meta name="description" content="here you can manage every thing">
     <title>Dashboard</title>
     <!-- Link for External Css File Which has General Styles, the root and Utilities Classes -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- Link for External Css File Which has the Styles for Main Content -->
-    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Script Tag For JavaScript External File -->
-    <script src="../main.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,7 +34,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
                     </svg>
-                    <figure><img src="../imgs/avatar.png" alt="User Photo"></figure>
+                    <figure><img src="./imgs/avatar.png" alt="User Photo"></figure>
                 </div>
             </div>
         </div>
@@ -43,16 +43,20 @@
         <h3>Phoenix</h3>
         <nav>
             <ul class="even-column">
-                <li class="active" data-type="dashboard">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
-                    </svg>
-                </li>
-                <li data-type="settings">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"/>
-                    </svg>
-                </li>
+                <a href="./home.html">
+                    <li class="active" data-type="dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/setting.html">
+                    <li data-type="settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"/>
+                        </svg>
+                    </li>
+                </a>
                 <li data-type="profile">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
@@ -94,7 +98,7 @@
                 <div class="top">
                     <h2>Welcome</h2>
                     <p>Phoenix</p>
-                    <figure><img src="../imgs/avatar.png" alt="user photo"></figure>
+                    <figure><img src="./imgs/avatar.png" alt="user photo"></figure>
                 </div>
                 <div class="bottom">
                     <div class="even-column">
@@ -185,7 +189,7 @@
                 <div class="news-body">
                     <div class="new even-column">
                         <div class="even-column">
-                            <figure><img src="../imgs/news-01.png" alt="first new photo"></figure>
+                            <figure><img src="./imgs/news-01.png" alt="first new photo"></figure>
                             <div class="new-content">
                                 <h5>Created SASS Section</h5>
                                 <p>New SASS Examples & Tutorials</p>
@@ -195,7 +199,7 @@
                     </div>
                     <div class="new even-column">
                         <div class="even-column">
-                            <figure><img src="../imgs/news-02.png" alt="first new photo"></figure>
+                            <figure><img src="./imgs/news-02.png" alt="first new photo"></figure>
                             <div class="new-content">
                                 <h5>Changed The Design</h5>
                                 <p>A Brand New Website Design</p>
@@ -205,7 +209,7 @@
                     </div>
                     <div class="new even-column">
                         <div class="even-column">
-                            <figure><img src="../imgs/news-03.png" alt="first new photo"></figure>
+                            <figure><img src="./imgs/news-03.png" alt="first new photo"></figure>
                             <div class="new-content">
                                 <h5>Team Increased</h5>
                                 <p>3 Developers Joined The Team</p>
@@ -215,7 +219,7 @@
                     </div>
                     <div class="new even-column">
                         <div class="even-column">
-                            <figure><img src="../imgs/news-04.png" alt="first new photo"></figure>
+                            <figure><img src="./imgs/news-04.png" alt="first new photo"></figure>
                             <div class="new-content">
                                 <h5>Added Payment Gateway</h5>
                                 <p>Many New Payment Fateways Added</p>
@@ -291,7 +295,7 @@
                 <div class="files-body">
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/pdf.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/pdf.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>my-file.pdf</h5>
                                 <p>Phoenix</p>
@@ -301,7 +305,7 @@
                     </div>
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/avi.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/avi.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>My-Video-File.avi</h5>
                                 <p>Admin</p>
@@ -311,7 +315,7 @@
                     </div>
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/psd.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/psd.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>My-Psd-File.psd</h5>
                                 <p>Ahmed</p>
@@ -321,7 +325,7 @@
                     </div>
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/zip.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/zip.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>My-Zip-File.zip</h5>
                                 <p>User</p>
@@ -331,7 +335,7 @@
                     </div>
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/dll.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/dll.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>My-DLL-File.dll</h5>
                                 <p>Admin</p>
@@ -341,7 +345,7 @@
                     </div>
                     <div class="file even-column">
                         <div class="even-column">
-                            <figure class="figure-icon"><img src="../imgs/eps.svg" alt="first new photo"></figure>
+                            <figure class="figure-icon"><img src="./imgs/eps.svg" alt="first new photo"></figure>
                             <div class="file-content">
                                 <h5>My-Eps-File.eps</h5>
                                 <p>Designer</p>
@@ -362,7 +366,7 @@
                     <h4>Test The Project</h4>
                     <h4>Finish The Project & Get Money</h4>
                 </div>
-                <figure><img src="../imgs/project.png" alt="project photo"></figure>
+                <figure><img src="./imgs/project.png" alt="project photo"></figure>
             </div>
             <div class="box reminders">
                 <div class="head">
@@ -405,7 +409,7 @@
                 <div class="top">
                     <h1>Latest Post</h1>
                     <div class="top-foot even-column">
-                        <figure><img src="../imgs/avatar.png" alt="user photo"></figure>
+                        <figure><img src="./imgs/avatar.png" alt="user photo"></figure>
                         <div class="top-foot2">
                             <h3>Ahmed Hesham</h3>
                             <p>About 3 Hours Ago</p>
@@ -418,11 +422,11 @@
                 <div class="bottom">
                     <div class="even-column">
                         <div class="even-column">
-                            <figure><img src="../imgs/heart-regular.svg" alt="like button"></figure>
+                            <figure><img src="./imgs/heart-regular.svg" alt="like button"></figure>
                             <h5>1.8K</h5>
                         </div>
                         <div class="even-column">
-                            <figure><img src="../imgs/comments-regular.svg" alt="comment button"></figure>
+                            <figure><img src="./imgs/comments-regular.svg" alt="comment button"></figure>
                             <h5>500</h5>
                         </div>
                     </div>
@@ -434,22 +438,22 @@
                 </div>
                 <div class="body">
                     <div class="app even-column">
-                        <figure><img src="../imgs/twitter.svg" alt="twitter"></figure>
+                        <figure><img src="./imgs/twitter.svg" alt="twitter"></figure>
                         <p>90K Followers</p>
                         <button>Follow</button>
                     </div>
                     <div class="app even-column">
-                        <figure><img src="../imgs/facebook-f.svg" alt="Facebook"></figure>
+                        <figure><img src="./imgs/facebook-f.svg" alt="Facebook"></figure>
                         <p>2M Like</p>
                         <button>Like</button>
                     </div>
                     <div class="app even-column">
-                        <figure><img src="../imgs/youtube.svg" alt="Youtube"></figure>
+                        <figure><img src="./imgs/youtube.svg" alt="Youtube"></figure>
                         <p>1M Subscirbe</p>
                         <button>Follow</button>
                     </div>
                     <div class="app even-column">
-                        <figure><img src="../imgs/linkedin.svg" alt="Linkedin"></figure>
+                        <figure><img src="./imgs/linkedin.svg" alt="Linkedin"></figure>
                         <p>90K Followers</p>
                         <button>Follow</button>
                     </div>

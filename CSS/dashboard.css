@@ -71,20 +71,23 @@ aside nav ul li {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
-    transition: background .1s, color .1s;
-    -webkit-transition: background .1s, color .1s;
-    -moz-transition: background .1s, color .1s;
-    -ms-transition: background .1s, color .1s;
-    -o-transition: background .1s, color .1s;
+    transition: background .2s, color .2s, fill .2s;
+    -webkit-transition: background .2s, color .2s, fill .2s;
+    -moz-transition: background .2s, color .2s, fill .2s;
+    -ms-transition: background .2s, color .2s, fill .2s;
+    -o-transition: background .2s, color .2s, fill .2s;
 }
 aside nav ul li:hover {
-    background-color: #F9F9F9;
-}
-aside nav ul li.active {
-    background-color: #F6F6F6;
+    background-color: var(--accent-clr1);
 }
 aside nav ul li::after {
     content: attr(data-type);
+}
+aside nav ul li:hover::after {
+    color: white;
+}
+aside nav ul li:hover svg {
+    fill: white;
 }
 @media (max-width: 50em) {
     aside h3 {
@@ -121,9 +124,6 @@ header input {
     -o-border-radius: .3rem;
     padding-left: 30px;
     outline: none;
-}
-header input::placeholder {
-    color: #999;
 }
 header input:focus {
     width: 230px;
@@ -662,9 +662,6 @@ Start Settings Page
     height: 100%;
     border: 1px solid #999;
     border-left: 0;
-}
-.box.social-info .social-box input::placeholder {
-    color: #999;
 }
 input:is([type='checkbox'], [type='radio']) {
     margin-right: 1rem;
