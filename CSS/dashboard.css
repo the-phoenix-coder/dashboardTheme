@@ -816,7 +816,7 @@ Start Friends Page
 }
 .box.friends .top .contact {
     position: absolute;
-    top: 7px;
+    top: -7px;
     left: 7px;
     gap: .3rem;
 }
@@ -867,9 +867,15 @@ Start Friends Page
 .box.friends .middle {
     padding-left: 3rem;
 }
+.box.friends .middle > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
 .box.friends .middle .even-column {
     gap: 2rem;
 }
 .box.friends .bottom .even-column {
     justify-content: space-between;
+}
+.box.friends .bottom .right.even-column {
+    gap: .3rem
 }
