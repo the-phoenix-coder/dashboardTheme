@@ -720,13 +720,13 @@ Start Courses Page
 .....................
 .....................
 */
-.box.courses {
+.box.courses, .box.friends {
     position: relative;
     padding: 0 !important;
     padding-bottom: 2rem !important;
 }
 
-.box.courses .top {
+.box.courses .top, .box.friends .top {
     padding: 0;
     margin: 0!important;
 }
@@ -786,4 +786,90 @@ Start Courses Page
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+}
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Friends Page
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.component.friendsPage {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    row-gap: 1rem;
+}
+.box.friends {
+    position: relative;
+    padding-top: 1rem !important;
+}
+.box.friends .top .contact {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    gap: .3rem;
+}
+.box.friends .top .contact > * {
+    background-color: var(--white-5);
+    padding: .5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.box.friends .top .contact > *:hover{
+    background-color: var(--accent-clr1);
+}
+.box.friends .top .contact > * svg{
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    fill: #666;
+    transition: fill .3s;
+    -webkit-transition: fill .3s;
+    -moz-transition: fill .3s;
+    -ms-transition: fill .3s;
+    -o-transition: fill .3s;
+}
+.box.friends .top .contact > *:hover svg{
+    fill: white;
+    cursor: pointer;
+}
+.box.friends .top {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+}
+.box.friends .top > * {
+    margin-bottom: .7rem;
+}
+.box.friends .top figure {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.box.friends .middle {
+    padding-left: 3rem;
+}
+.box.friends .middle .even-column {
+    gap: 2rem;
+}
+.box.friends .bottom .even-column {
+    justify-content: space-between;
 }
