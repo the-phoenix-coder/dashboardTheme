@@ -810,7 +810,7 @@ Start Friends Page
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     row-gap: 1rem;
 }
-.box.friends {
+.box.friends, .box.projects {
     position: relative;
     padding-top: 1rem !important;
 }
@@ -850,6 +850,8 @@ Start Friends Page
 .box.friends .top {
     display: grid;
     justify-content: center;
+}
+.box.friends .top, .box.projects .top {
     background-color: white;
 }
 .box.friends .top > * {
@@ -879,3 +881,103 @@ Start Friends Page
 .box.friends .bottom .right.even-column {
     gap: .3rem
 }
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Friends Page
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.component.projectsPage {
+    row-gap: 1rem;
+}
+.box.projects .floating {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: .9rem;
+}
+.box.projects .top > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.box.projects .top .team-photos {margin-top: 3rem;}
+.box.projects .top .team-photos figure {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateX(var(--space));
+    -webkit-transform: translateX(var(--space));
+    -moz-transform: translateX(var(--space));
+    -ms-transform: translateX(var(--space));
+    -o-transform: translateX(var(--space));
+}
+.box.projects .top .team-photos figure:nth-child(2) {--space: -7px}
+.box.projects .top .team-photos figure:nth-child(3) {--space: -14px}
+.box.projects .top .team-photos figure:nth-child(4) {--space: -21px}
+.box.projects .top .team-photos figure:nth-child(5) {--space: -28px}
+
+.box.projects .middle .even-column {
+    float: right;
+    gap: .5rem;
+}
+.box.projects .middle .even-column > * {
+    background-color: var(--white-5);
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.box.projects .bottom.even-column {
+    justify-content: space-between;
+    align-items: baseline;
+}
+.box.projects .bottom.even-column .head-back {
+    height: 10px;
+    width: clamp(40%, 60%, 80%);
+    border-radius: .5rem;
+}
+.box.projects .bottom.even-column .head-front {
+    background-color: var(--clr);
+    border-radius: .5rem;
+    width: var(--weight);
+}
+:where(
+    .box.projects:first-child,
+    .box.projects:nth-child(6))
+    .bottom.even-column .head-front {--clr: #F44336}
+:where(
+    .box.projects:nth-child(2),
+    .box.projects:nth-child(4), 
+    .box.projects:nth-child(5), 
+    .box.projects:nth-child(7), 
+    .box.projects:nth-child(8), 
+    .box.projects:last-child)
+    .bottom.even-column .head-front {--clr: #22C55E}
+.box.projects:nth-child(3) .bottom.even-column .head-front {--clr: #0075FF}
+
+.box.projects:nth-child(2) .bottom.even-column .head-front {--weight: 80%}
+.box.projects:nth-child(3) .bottom.even-column .head-front {--weight: 100%}
+.box.projects:nth-child(4) .bottom.even-column .head-front {--weight: 60%}
+.box.projects:nth-child(5) .bottom.even-column .head-front {--weight: 70%}
+.box.projects:nth-child(6) .bottom.even-column .head-front {--weight: 35%}
+:where(.box.projects:nth-child(7), .box.projects:nth-child(8)) .bottom.even-column .head-front {--weight: 65%}
+.box.projects:last-child .bottom.even-column .head-front {--weight: 95%}
