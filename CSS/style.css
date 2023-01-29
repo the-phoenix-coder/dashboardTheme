@@ -30,6 +30,14 @@
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent-clr1);
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -ms-transition: background .3s;
+    -o-transition: background .3s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #046bb9;
 }
 html,
 body {
@@ -43,7 +51,7 @@ body {
     "aside content";
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 100%;
-    background-color: #DDD;
+    background-color: #eee;
     height: 100vh;
 }
 figure {
