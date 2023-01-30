@@ -1146,3 +1146,73 @@ Start Files Page
         -o-transform: translateY(-3px);
     }
 }
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Files Page 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.box.plan .head {
+    text-align: center;
+    background-color: var(--clr);
+    color: white;
+    box-shadow: 0 0 0 3px white, 0 0 0 7px var(--clr);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding-block: 1rem;
+}
+.box.plan:first-child .head {--clr: #22c55e;}
+.box.plan:nth-child(2) .head {--clr: #0075FF;}
+.box.plan:last-child .head {--clr: #F59E0B;}
+.box.plan .head h1 {
+    font-size: 2rem;
+}
+.box.plan .head h1:last-child {
+    margin-top: .3rem;
+    font-size: 3rem;
+}
+.box.plan .head h1 sup {
+    margin-right: .3rem;
+}
+.box.plan > .even-column {
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EEE;
+}
+.box.plan .even-column .even-column svg.right {
+    fill: #22c55e;
+    margin-right: 1rem;
+}
+.box.plan .even-column .even-column svg.wrong {
+    fill: #F44336;
+    margin-right: 1rem;
+}
+.box.plan > .even-column > svg {
+    cursor: pointer;
+}
+.box.plan button {
+    background-color: var(--clr);
+    align-self: flex-start;
+}
+.box.plan:first-child button {--clr: #22c55e;}
+.box.plan:nth-child(2) button {--clr: #0075FF;}
+.box.plan:last-child button {--clr: #F59E0B;}
+.box.plan p {
+    text-align: center;
+}
