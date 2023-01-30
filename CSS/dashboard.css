@@ -1057,6 +1057,18 @@ Start Files Page
 .content .file-content .component .file .file-top figure {
     width: 50px;
     margin-block: 1rem;
+    transition: transform .6s;
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -ms-transition: transform .6s;
+    -o-transition: transform .6s;
+}
+.content .file-content .component .file:hover .file-top figure {
+    transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
 }
 .content .file-content .component .file .bottom .even-column {
     justify-content: space-between;
@@ -1132,5 +1144,5 @@ Start Files Page
         -moz-transform: translateY(-3px);
         -ms-transform: translateY(-3px);
         -o-transform: translateY(-3px);
-}
+    }
 }
