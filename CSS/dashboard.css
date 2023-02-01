@@ -893,7 +893,7 @@ Start Friends Page
 .....................
 .....................
 .....................
-Start Friends Page
+Start Projects Page
 .....................
 .....................
 .....................
@@ -1215,4 +1215,80 @@ Start Files Page
 .box.plan:last-child button {--clr: #F59E0B;}
 .box.plan p {
     text-align: center;
+}
+/* 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+Start Profile Page 
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+*/
+.profile-container .profile-box .even-column .left {
+    border-right: 1px solid #EEE;
+    text-align: center;
+    padding-inline: 3rem;
+}
+.profile-container .profile-box .even-column .left * {
+    margin-bottom: .7rem;
+}
+.profile-container .profile-box .even-column .left figure {
+    width: 100px;
+    margin: auto;
+}
+.profile-container .profile-box .even-column .left .even-column {
+    justify-content: center;
+}
+.profile-container .profile-box .even-column .left .even-column figure {
+    width: 20px;
+    margin: .2rem;
+    aspect-ratio: 1;
+}
+.profile-container .profile-box .even-column .left p:last-of-type {
+    font-size: .8rem;
+}
+.profile-box .right {
+    width: 100%;
+    
+}
+.profile-container .profile-box .even-column .right > * {
+    padding-left: 2rem;
+}
+.profile-container .profile-box .even-column .right .righter:not(:last-child) {
+    border-bottom: 1px solid #EEE;
+}
+.profile-container .profile-box .even-column .right .righter {
+    padding-block: 1rem;
+}
+.profile-container .profile-box .even-column .right .righter > * {
+    margin-bottom: .5rem;
+}
+.profile-container .profile-box .even-column .right .righter .even-column {
+    justify-content: space-between;
+}
+.profile-container .profile-box .even-column .right .righter .even-column div{
+    width: 100%;
+}
+.profile-container .profile-box .even-column .right .righter .even-column p::after {
+    content: attr(data-name);
+    margin-left: .5rem;
+    color: black;
+}
+.profile-box .right .btn-toggle {
+    height: 20px;
+}
+.profile-box .right .btn-toggle .head-toggle {
+    height: 15px;
+    width: 15px;
 }

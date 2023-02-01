@@ -136,13 +136,13 @@ input::placeholder, textarea::placeholder {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     padding-inline: .3rem;
-    padding-top: 2.5px;
     cursor: pointer;
+    padding-top: .18rem;
 }
 .head-toggle {
     background-color: white;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
