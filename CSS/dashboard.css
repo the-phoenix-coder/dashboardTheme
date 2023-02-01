@@ -827,8 +827,13 @@ Start Friends Page
 .....................
 */
 .component.friendsPage {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     row-gap: 1rem;
+}
+@media(max-width: 50em) {
+    .component.friendsPage {
+        grid-template-columns: 1fr;
+    }
 }
 .box.friends, .box.projects {
     position: relative;
@@ -1332,6 +1337,7 @@ Start Profile Page
 }
 .profile-container-middle {
     display: flex !important;
+    max-width: 100%;
 }
 .profile-container-middle .box:first-child {
     width: fit-content;
@@ -1340,7 +1346,9 @@ Start Profile Page
     gap: 1rem;
     border-bottom: 1px solid #EEE;
     padding-bottom: 1rem;
-    padding-right: 7rem;
+}
+.profile-container-middle .box:first-child .skill-section {
+    flex-wrap: wrap;
 }
 .profile-container-middle .box:first-child .skill-section > * {
     background-color: #EEE;
@@ -1361,6 +1369,7 @@ Start Profile Page
 .profile-container-middle .box:last-child .even-column {
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .profile-container-middle .box:last-child figure {
     width: 60px;
