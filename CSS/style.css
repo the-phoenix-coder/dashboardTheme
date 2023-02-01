@@ -51,7 +51,7 @@ body {
     "aside content";
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 100%;
-    background-color: #eee;
+    background-color: #F1F5F9;
     height: 100vh;
 }
 figure {

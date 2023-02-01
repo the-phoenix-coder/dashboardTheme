@@ -1292,3 +1292,41 @@ Start Profile Page
     height: 15px;
     width: 15px;
 }
+.profile-container-middle {
+    display: flex !important;
+}
+.profile-container-middle .box:first-child {
+    width: fit-content;
+}
+.profile-container-middle .box:first-child .skill-section:not(:last-child) {
+    gap: 1rem;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 1rem;
+    padding-right: 7rem;
+}
+.profile-container-middle .box:first-child .skill-section > * {
+    background-color: #EEE;
+    padding: .2rem .6rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.profile-container-middle .box:last-child {
+    flex: 1;
+}
+.profile-container-middle .box:last-child > .even-column:not(:last-child) {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 1rem;
+}
+.profile-container-middle .box:last-child .even-column {
+    justify-content: space-between;
+    gap: 1rem;
+}
+.profile-container-middle .box:last-child figure {
+    width: 60px;
+}
+.profile-container-middle .box:last-child .activitiy-content h4 {
+    margin-bottom: .5rem;
+}
