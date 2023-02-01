@@ -1235,6 +1235,28 @@ Start Profile Page
 .....................
 .....................
 */
+@media(max-width: 60em) {
+    .profile-container .profile-box .even-column {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile-container .profile-box .even-column .left {
+        border: 0 !important;
+    }
+    .profile-container .profile-box .even-column .right .even-column > * {
+        margin-block: .5rem;
+    }
+    .profile-container .profile-box .even-column .right .righter .even-column {
+        flex-wrap: wrap;
+    }
+    .profile-container-middle {
+        flex-wrap: wrap;
+    }
+    .profile-container-middle .box:first-child {
+        width: 100% !important;
+        order: 2;
+    }
+}
 .profile-container .profile-box .even-column .left {
     border-right: 1px solid #EEE;
     text-align: center;
@@ -1259,8 +1281,7 @@ Start Profile Page
     font-size: .8rem;
 }
 .profile-box .right {
-    width: 100%;
-    
+    width: 100%;    
 }
 .profile-container .profile-box .even-column .right > * {
     padding-left: 2rem;
