@@ -433,7 +433,7 @@ header .icons figure {
 }
 .box .body.last-body::before {
     content: '';
-    height: 100%;
+    height: 92%;
     width: 4px;
     background-color: var(--accent-clr1);
     position: absolute;
@@ -494,6 +494,11 @@ header .icons figure {
     opacity: .2;
     width: 180px;
     height: 180px;
+}
+@media(max-width: 35em) {
+    .box.last-project-box figure {
+        display: none;
+    }
 }
 .box.reminders div:not(:first-child, :nth-child(2)) {
     margin-top: 1rem;
@@ -587,6 +592,22 @@ header .icons figure {
     background-color: var(--accent-clr1);
     padding: .3rem;
     left: -2rem;
+}
+@media(max-width: 50em) {
+    .box.social-media .app {
+        padding: .3rem .5rem;
+    }
+    .box.social-media .app figure {
+        width: 25px;
+        height: 35px;
+    }
+    .box.social-media .app p {
+        font-size: .9rem !important;
+        font-weight: bold;
+    }
+    .box.social-media .app button {
+        font-size: .6rem !important;
+    }
 }
 .box.social-media .app:nth-child(2) figure {background-color: #1877F2;}
 .box.social-media .app:nth-child(3) figure {background-color: #FF0000;}
@@ -713,6 +734,7 @@ label {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    flex-grow: 1;
 }
 .plans .plan.active {
     border-color: var(--accent-clr1);
@@ -961,6 +983,7 @@ Start Projects Page
 .box.projects .middle .even-column {
     float: right;
     gap: .5rem;
+    flex-wrap: wrap;
 }
 .box.projects .middle .even-column > * {
     background-color: var(--white-5);
